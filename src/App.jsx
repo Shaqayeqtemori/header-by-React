@@ -14,11 +14,6 @@ export default function Header({ title = "My Header", links = [] }) {
           </a>
         ))}
       </nav>
-
-      <div className="md:hidden">
-        <button onClick={() => setMenuOpen(!menuOpen)}>☰</button>
-      </div>
-
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-blue-700 flex flex-col items-center md:hidden">
           {links.map((link, index) => (
