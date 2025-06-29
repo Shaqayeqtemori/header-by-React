@@ -9,7 +9,7 @@ export default function Header({ title = "My Header", links = [] }) {
 
       <nav className="hidden md:flex gap-4">
         {links.map((link, index) => (
-          <a key={index} href={link.href} className="hover:underline">
+          <a key={index} href={link.href} >
             {link.label}
           </a>
         ))}
